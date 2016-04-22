@@ -1,6 +1,6 @@
 //Adding button
 
-$('<input type="button" value="toggle" id="toggleButton">').insertAfter('#disclaimer');
+$('<input type="button" value="Disclaimer" id="toggleButton">').insertAfter('#disclaimer');
 
 //Adding Buttom Before div...
 //$('<input type="button" value="toggle" //id="toggleButton">').insertBefore('#disclaimer');
@@ -12,10 +12,13 @@ $('#toggleButton').click(function(){
     
     $('#disclaimer').fadeToggle('slow');
     
-    if ($('#disclaimer').is(':visible')) {$(this).val('Hide');}else{$(this).val('Show');}
+    if ($('#disclaimer').is(':visible')) {$(this).val('Disclaimer',$('#toggleButton').fadeOut('slow'));}else{$(this).val('Show');}
        
     });
-//$('#disclaimer').fadeOut('slow'.function(){
+
+
+
+//$('#disclaimer').slideUp('slow', function(){
 //$('#toggleButton').fadeOut();        
 //});
 
